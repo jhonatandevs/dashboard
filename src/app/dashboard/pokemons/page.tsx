@@ -1,5 +1,7 @@
-import { PokemonsResponse, SimplePokemon } from "@/app/pokemons";
-import { Pokemon } from '../../components/Pokemon';
+
+import { SimplePokemon } from '@/pokemons/interfaces/simple-pokemon';
+import { Pokemon } from '../../../components/Pokemon';
+import { PokemonsResponse } from '@/pokemons/interfaces/pokemons-response';
 
 const getPokemons = async (limit = 20, offset = 0): Promise<SimplePokemon[]> => {
     const data: PokemonsResponse = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`)

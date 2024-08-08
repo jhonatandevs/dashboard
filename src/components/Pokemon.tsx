@@ -1,8 +1,9 @@
 import React from 'react'
-import { SimplePokemon } from '../pokemons/interfaces/simple-pokemon';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { IoHeart } from 'react-icons/io5';
+import { SimplePokemon } from '@/pokemons/interfaces/simple-pokemon';
 
 interface Props {
   id: string
