@@ -16,6 +16,7 @@ const getPokemon = async (id = '1'): Promise<SimplePokemon> => {
     image: data.sprites.other.dream_world.front_default || '',
     name: data.name
   }
+  console.log(pokemon)
   return pokemon;
 }
 interface ImageProps{
